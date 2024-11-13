@@ -1,3 +1,5 @@
-import taskBlock from './1-block-scoped.js'
+import taskBlock from './1-block-scoped';
 
-  expect(taskBlock(true).toBe([ false, true ]));
+test('test block scope', () => {
+  expect(taskBlock(true)).toStrictEqual([ false, true ]);
+});
